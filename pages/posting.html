@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="OLX">
+    <link rel="apple-touch-icon" href="../images/icons/OLX-Logo.jpg">
+    <meta name="msapplication-TitleImage" content="./images/icons/OLX-Logo.jpg">
+    <meta name="msapplication-TitleColor" content="#ffffff">
+    <link rel="icon" href="../images/icons/OLX-Logo.jpg">
+    <meta name="" content="">
+
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+    <script src="../bootstrap-3.3.7/js/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.7/js//bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-sweetalert.min.css" />
+    <script src="../bootstrap-3.3.7/js/bootstrap-sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Ads Submit</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBh_6m4kUVQmdPVpNmeV9WNTKH9mtjVl2E",
+            authDomain: "hackathon-project-784cd.firebaseapp.com",
+            databaseURL: "https://hackathon-project-784cd.firebaseio.com",
+            projectId: "hackathon-project-784cd",
+            storageBucket: "",
+            messagingSenderId: "241240995236"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body class="postingPage">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 postingPageLogoDiv">
+                <a href="./index.html">
+                    <img src="../images/icons/OLX-Logo.jpg " alt="OLX-Logo ">
+                </a>
+                <span>Pakistan's Largest Marketplace</span>
+            </div>
+            <div class="col-md-5 postingPageLBtnDiv">
+                <button class="btn btn-md btn-warning" onclick="window.location='./myPost.html' ">
+                    <span class="glyphicon glyphicon-user"></span>My Account</button>
+                <button id="log-Out" class="btn btn-md btn-default" onclick="logOut()">
+                    <span class="glyphicon glyphicon-off">LogOut</span>
+                </button>
+            </div>
+        </div>
+        <div class="row ad-Form">
+            <h1>Submit an Ad</h1>
+            <label>Ad Title*</label>
+            <input id="ad-Title" type="text" maxlength="25">
+            <br>
+            <br>
+            <label>Category*</label>
+            <select id="ad-category">
+                <option value="1">Select Category</option>
+                <option value="2">Mobile</option>
+                <option value="3">Electronics And Home Appliances</option>
+                <option value="4">Vehicles</option>
+                <option value="5">Bike</option>
+                <option value="6">Property For Sale</option>
+                <option value="7">Property For Rent</option>
+                <option value="8">Jobs</option>
+                <option value="9">Services</option>
+                <option value="10">Business Industrial & Agriculture</option>
+                <option value="11">Furniture & Home Decor</option>
+                <option value="12">Animals</option>
+                <option value="13">Books, Sports & Hobbies</option>
+                <option value="14">Fashion & Beauty</option>
+                <option value="15">Kids</option>
+            </select>
+            <br>
+            <br>
+            <label>Ad Description*</label>
+            <br>
+            <textarea id="ad-Description" cols="50" rows="5" maxlength="400"></textarea>
+            <br>
+            <br>
+            <label>Upload Photos*</label>
+            <br>
+            <!-- <div> -->
+
+            <div class="upload-btn-wrapper">
+                <button class="btn btnUpload">Upload a file 1</button>
+                <input type="file" accept="image/*" onchange="previewFile()" />
+                <span id="file-Name"></span>
+
+
+                <!-- <input id="imgFile" type="file" onchange="previewFile()">
+                <br>
+                <img src="" height="200" alt="Image preview..."> -->
+
+
+                <!-- <button class="btn btnUpload">Upload a file 2</button>
+                <input type="file" name="myfile" />
+                <button class="btn btnUpload">Upload a file 3</button>
+                <input type="file" name="myfile" />
+                <button class="btn btnUpload">Upload a file 4</button>
+                <input type="file" name="myfile" /> -->
+
+            </div>
+            <br>
+            <br>
+            <!-- </div> -->
+            <label>Model*</label>
+            <input id="ad-Model" type="text" maxlength="25">
+            <br>
+            <br>
+            <label>Year*</label>
+            <input id="ad-Year" type="text" minlength="4" maxlength="4">
+            <span>e.g* 2018</span>
+            <br>
+            <br>
+            <label>Prize In Rupees*</label>
+            <input id="ad-Prize" type="number">
+            <br>
+            <br>
+            <button id="ad-Submit" class="btn btn-lg btn-info" onclick="submitAd()">Submit</button>
+
+
+
+        </div>
+        <div class="row ">
+
+        </div>
+    </div>
+
+    <script src="../scripts/app.js"></script>
+
+</body>
+
+</html>

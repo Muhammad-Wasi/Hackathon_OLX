@@ -1,0 +1,426 @@
+/* For Login And SignUp Page Start*/
+
+body {
+    width: auto;
+    height: auto;
+    /*background-color:#ccc; */
+    /*background: linear-gradient(to right, #498dc8, #5cb85c)*/
+}
+.indexBox{
+    border: 3px solid darkcyan;
+}
+.well{
+    max-width:500px;
+}
+
+select{
+    width:auto
+}
+.modal-header, h4, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}
+.modal-footer {
+    background-color: #f9f9f9;
+}
+.btns{
+    margin-top: 20%;
+    text-align: center;
+}
+#fullName{
+    padding: 10px 0px 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px
+}
+#email{
+    padding: 10px 0px 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#password{
+    padding: 10px 0px 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#re-password{
+    padding: 10px 0px 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+.headr{
+    background-color: rgb(8, 88, 88);;
+    color: rgb(8, 88, 88);
+    border: 3px solid black;
+}
+.headr label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* For Login And SignUp Page End */
+
+
+/*for Front OLX Page Start*/
+
+.frontOLX{
+    text-align: center;
+}
+.frontOLXLogoDiv{
+    margin-top:8px
+}
+.frontOLXLogoDiv img{
+    width: 20%;
+    height: 15%;
+}
+.frontOLXLogoDiv span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.frontOLXLBtnDiv button{
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+.search-row{
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 9px;
+    padding: 8px 0px;
+    background-color: gainsboro;
+}
+#Category-page-search{
+    padding: 6px 0px 6px 15px;
+    margin: 5px 0px;    
+    width: 60%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;    
+}
+#index-page-search{
+    padding: 6px 0px 6px 15px;
+    margin: 8px 0px;    
+    width: 80%;
+    border: 2px solid rgb(17, 112, 107);
+    border-radius: 5px;
+}
+/* #search-row-Div1{
+    margin: 15px 0px;
+}
+#search-row-Div2{
+    margin: 15px 0px;
+} */
+#fetchingDiv{
+    margin-top: 8px;
+}
+#searchFetchiDiv{
+    margin-top: 8px;
+}
+#cardDiv{
+    /*width: 33%;    */
+    padding: 0px;
+    margin: 8px;
+    border: 3px solid rgb(10, 133, 133);
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgb(39, 97, 97);
+}
+#imgBox{
+    width: 100%;
+    /*margin: 0px;*/
+    height: 35vh;
+    border: 3px solid gainsboro;
+    border-radius: 8px;    
+}
+.titleDiv{
+    /*margin: 0px;*/
+    border: 3px solid rgb(19, 97, 97);
+    border-radius: 8px;
+    /*background-color: rgb(91, 187, 187);*/
+    background-color: white;
+    /* color: rgb(7, 97, 97); */
+}
+#head5{
+    padding: 5px 0px;
+    margin-top: 0px;
+    /*font-weight: bold;*/
+    background-color: rgb(56, 117, 117);
+    border-radius: 8px;
+    /* color: rgb(14, 73, 73);     */
+    margin-bottom: 3px;
+}
+#paraModel{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    /* background-color: rgb(81, 145, 145); */
+    border-radius: 5px;
+    
+}
+.spanClass{
+    color: black;
+}
+.butn{
+    margin-left: 25px;
+}
+/*for Front OLX Page Start*/
+
+/*Posting Page Start */
+
+.postingPage{
+    text-align: center;
+}
+.postingPageLogoDiv{
+    margin-top:8px;
+    /* border: 2px solid black; */
+}
+.postingPageLogoDiv img{
+    width: 20%;
+    height: 15%;
+}
+.postingPageLogoDiv span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.postingPageLBtnDiv{
+    padding-top: 15px;
+
+}
+.ad-Form{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+    border: 5px solid darkcyan;
+    border-radius: 8px;
+    color: rgb(18, 80, 80);
+    background-color: rgb(245, 243, 243);
+    
+}
+.ad-Form h1{
+    /* background-color: darkcyan; */
+    /* color: rgb(18, 80, 80); */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 5px 0px 5px 0px;
+}
+.ad-Form label{
+    font-size: 20px;    
+}
+#ad-Title{
+    /*padding-left: 10px;*/
+    padding: 8px 0px 8px 15px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#ad-Year{
+    /*padding-left: 15px;*/
+    padding: 10px 0px 10px 15px;
+    width: 40%;
+    height: 8%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#ad-category{
+    padding: 10px 0px 10px 15px;
+    width: 40%;
+    height: 8%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#ad-Description{
+    margin-left: 15%;
+    padding: 8px 0px 8px 15px;
+    width: 70%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 15%;
+  }
+  
+.btnUpload {
+    border: 2px solid lightseagreen;
+    color: rgb(15, 109, 104);
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+#ad-Model{
+    padding: 8px 0px 8px 15px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#ad-Prize{
+    padding: 8px 0px 8px 15px;
+    width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px; 
+}
+#ad-Submit{
+    /* text-align: center; */
+    margin-left: 50%;
+}
+
+/*detail work*/
+
+#detailsDiv h3{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+#imgDiv{
+    /*width: 100%;*/
+    border: 5px solid darkcyan;
+    padding: 0px;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 0px 10px 0px 10px;
+    margin: 5px auto;    
+}
+#imgsrc{
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 8px gray;    
+}
+#dataDiv{
+    border: 5px solid darkcyan;
+    padding: 0px;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 0px 5px 0px 5px;
+    margin: 5px auto;
+    /*padding-top: 0px;*/
+}
+#dataDiv div{
+    width: 100%;
+    padding-top: 0px;
+    margin: 0px auto;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+#chatDiv{
+    /* width: 100%; */
+    margin: 5px auto;    
+    border: 5px solid darkcyan;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    height: 85vh;
+}
+.chatData{
+    width: 100%;    
+    margin: 0px;
+    height: 80%;
+    border: 2px solid red;
+}
+#head1{
+    margin: 0px;
+    color: darkcyan;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px grey;
+    height: 7%;
+}
+.chatData ul{
+    width: 100%;    
+    list-style-type: none;
+    padding: 0px;
+    height: 100%;
+    overflow: scroll;
+    border: 2px solid darkcyan;
+    background-color: whitesmoke;
+}
+.chatData ul li{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    width: 100%;    
+    border: 2px solid darkcyan;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(2, 90, 90);
+    background-color: white;
+    text-decoration-style: none;
+    overflow-wrap: break-word;
+}
+.chatData ul li h5{
+    width: 80%;
+}
+.chatData ul li p{
+    width: 156px;
+}
+#ulMsgList li{
+    width: 80%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 3px 3px 3px 6px;
+}
+#text{
+    padding: 2px 0px 2px 4px;
+    margin: 5px 0px;    
+    width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;  
+}
+.msgSendDiv{
+    height: 9%;
+    margin-top: 2px;
+    /* border: 2px solid darkcyan;     */
+}
+/* #sendDiv .text{
+    border: 2px solid darkcyan;
+    height: 100%;
+    border-radius: 5px;
+    width: 75%;
+}
+#sendDiv .name{
+    width: 20%;
+    border: 2px solid darkcyan;
+    height: 100%;
+    border-radius: 5px;
+    float: left;
+} */

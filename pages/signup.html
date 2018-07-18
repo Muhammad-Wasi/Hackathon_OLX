@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>AID Each Other</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="OLX">
+  <link rel="apple-touch-icon" href="../images/icons/signup.png">
+  <meta name="msapplication-TitleImage" content="../images/icons/signup.png">
+  <meta name="msapplication-TitleColor" content="#ffffff">
+  <link rel="icon" href="../images/icons/signup.png">  
+  <meta name="" content="">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- <link rel="manifest" href="./manifest.json"> -->
+  <!--<link rel="icon" href="./images/sign-up.png">-->
+
+  <!-- Latest compiled and minified CSS -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-sweetalert.min.css" />
+    <script src="../bootstrap-3.3.7/js/bootstrap-sweetalert.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script> -->
+  
+    <!-- Optional theme -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">-->
+  <!-- <link rel="stylesheet" type="text/css" href="MyCss.css"/> -->
+
+  <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+  <script src="../bootstrap-3.3.7/js/jquery.min.js"></script>
+  <script src="../bootstrap-3.3.7/js//bootstrap.min.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBh_6m4kUVQmdPVpNmeV9WNTKH9mtjVl2E",
+      authDomain: "hackathon-project-784cd.firebaseapp.com",
+      databaseURL: "https://hackathon-project-784cd.firebaseio.com",
+      projectId: "hackathon-project-784cd",
+      storageBucket: "",
+      messagingSenderId: "241240995236"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+
+</head>
+
+<body>
+  <div class="container" align="center">
+    <div class="well headr" style="box-shadow: 8px 8px #2965be; margin-top: 15px">
+      <!-- <form > -->
+      <span style="font-size:36px; font-weight:bold;">Create an account</span>
+
+      <hr />
+
+      <div class="form-group">
+        <label for="FullName">
+          <span class="glyphicon glyphicon-user"></span> Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="txtFullName" placeholder="Full Name" />
+      </div>
+
+      <div class="form-group">
+        <label for="Email">
+          <span class="glyphicon glyphicon-envelope"></span> Email address</label>
+        <input type="email" class="form-control" id="email" name="txtEmail" placeholder="Email address" />
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="Re-Email">
+          <span class="glyphicon glyphicon-envelope"></span> Re-enter email address</label>
+        <input type="email" class="form-control" id="re-email" name="txtRe_Email" placeholder="Re-enter email address" />
+      </div> -->
+
+      <div class="form-group">
+        <label for="Password">
+          <span class="glyphicon glyphicon-eye-close"></span> Password</label>
+        <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Password" />
+      </div>
+
+      <div class="form-group">
+        <label for="Re-Password">
+          <span class="glyphicon glyphicon-eye-close"></span> Re-enter password</label>
+        <input type="password" class="form-control" id="re-password" name="txtRe_Password" placeholder="Re-enter password" />
+      </div>
+
+      <div>
+        <p style="font-size:11px; color:#999">By clicking Create an account, you agree to our
+          <a href="">Terms</a> and that
+          <br /> you have read our
+          <a href="">Data Policy</a> , including our
+          <a href="">Cookie Use</a> .
+        </p>
+      </div>
+
+      <div class="form-group">
+        <button onclick="creatAccount()" class="btn btn-success btn-lg">Create an account</button>
+        <br>
+        <br>
+        <a href="./logIn.html">
+          <button class="btn btn-info btn-medium">Sign In</button>
+        </a>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+
+  <!-- <footer>
+    <div class="container" align="center">
+      <hr class="btn-deffault">
+
+      <p>
+        <input type="button" class="btn btn-info btn-sm" onClick="location.href='https://www.facebook.com/wasi.shah.965580'" value="Connect me On Facebook"
+        />
+      </p>
+      <p>
+        <input type="button" class="btn btn-info btn-sm" onClick="location.href='mailto:heinhtutaung.hha.96@gmail.com'" value="Mail me For Feedback"
+        />
+      </p>
+      <p>
+        <input type="button" class="btn btn-info btn-sm" onClick=""="https://www.youtube.com/results?search_query=bootstrap+tutorial+for+beginners'"
+          value="Subscribe Here For Bootstrap Tutorial On Youtube" />
+      </p>
+    </div> -->
+    <!-- end container -->
+  <!-- </footer> -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="../scripts/app.js"></script>
+</body>
+</body>
+
+</html>

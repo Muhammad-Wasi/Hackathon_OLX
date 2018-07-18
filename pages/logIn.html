@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="OLX">
+    <link rel="apple-touch-icon" href="../images/icons/login.jpg">
+    <meta name="msapplication-TitleImage" content="../images/icons/login.jpg">
+    <meta name="msapplication-TitleColor" content="#ffffff">
+    <link rel="icon" href="../images/icons/login.jpg">    
+    <meta name="" content="">
+    
+    <!--<link rel="icon" href="../images/login.png">-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+    <script src="../bootstrap-3.3.7/js/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.7/js//bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-sweetalert.min.css" />
+    <script src="../bootstrap-3.3.7/js/bootstrap-sweetalert.min.js"></script>
+    <title>Log In OLX Pakistan</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBh_6m4kUVQmdPVpNmeV9WNTKH9mtjVl2E",
+            authDomain: "hackathon-project-784cd.firebaseapp.com",
+            databaseURL: "https://hackathon-project-784cd.firebaseio.com",
+            projectId: "hackathon-project-784cd",
+            storageBucket: "",
+            messagingSenderId: "241240995236"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+    <div class="container btns">
+        <button class="btn btn-lg btn-success" onclick="location = './sigup.html'">Sign Up</button>
+        <button class="btn btn-lg btn-primary" onclick="location = './logIn.html'">Sign In</button>
+        <button class="btn btn-lg btn-warning" onclick="location = './index.html'">Home</button>    
+    </div>
+    <div class="container">
+        <!-- <h2>Modal Login Example</h2> -->
+        <!-- Trigger the modal with a button -->
+        <!-- <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>
+                            <span class="glyphicon glyphicon-lock"></span> Login</h4>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <!-- <form role="form"> -->
+                        <div class="form-group">
+                            <label for="username">
+                                <span class="glyphicon glyphicon-user"></span> Email Address</label>
+                            <input type="text" class="form-control" id="emailLogin" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw">
+                                <span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="text" class="form-control" id="passwordLogin" placeholder="Enter password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checking" value="" checked>Remember me</label>
+                        </div>
+                        <button onclick="submit()" type="submit" class="btn btn-success btn-block">
+                            <span class="glyphicon glyphicon-off"></span> Login</button>
+                        <!-- </form> -->
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <a href="./Sign-Up/index.html"><button type="submit" class="btn btn-info btn-default pull-left" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</button></a> -->
+                        <a href="./signup.html" class="btn btn-info btn-default pull-left" role="button">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        <p>Not a member?
+                            <a href="./signup.html">Sign Up</a>
+                        </p>
+                        <p>Forgot
+                            <a href="#">Password?</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/app.js"></script>
+
+</body>
+
+</html>

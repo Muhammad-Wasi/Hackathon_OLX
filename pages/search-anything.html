@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="OLX">
+    <link rel="apple-touch-icon" href="../images/icons/animal.jpg">
+    <meta name="msapplication-TitleImage" content="../images/icons/animal.jpg">
+    <meta name="msapplication-TitleColor" content="#ffffff">
+    <link rel="icon" href="../images/icons/animal.jpg">
+    <meta name="" content="">
+
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+    <script src="../bootstrap-3.3.7/js/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.7/js//bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-sweetalert.min.css" />
+    <script src="../bootstrap-3.3.7/js/bootstrap-sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Search Every Thing In Biggest Marketplace</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBh_6m4kUVQmdPVpNmeV9WNTKH9mtjVl2E",
+            authDomain: "hackathon-project-784cd.firebaseapp.com",
+            databaseURL: "https://hackathon-project-784cd.firebaseio.com",
+            projectId: "hackathon-project-784cd",
+            storageBucket: "",
+            messagingSenderId: "241240995236"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body class="frontOLX" onload="fetchSearchData()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 frontOLXLogoDiv">
+                <a href="./index.html"><img src="../images/icons/OLX-Logo.jpg " alt="OLX-Logo "></a>
+                <span>Pakistan's Largest Marketplace</span>
+            </div>
+            <div class="col-md-5 frontOLXLBtnDiv">
+                <button class="btn btn-md btn-warning " onclick="window.location='./myPost.html' ">
+                    <span class="glyphicon glyphicon-user"></span>My Account</button>
+                <button class="btn btn-md btn-info" onclick="window.location = './posting.html'">Submit an Ad</button>
+                <button class="btn btn-md btn-danger" onclick="window.location = './favorite.html'">
+                    <span class="glyphicon glyphicon-heart-empty">Favorite</span>
+                </button>
+                <button id="log-Out" class="btn btn-md btn-default" onclick="logOut()">
+                    <span class="glyphicon glyphicon-off">LogOut</span>
+                </button>
+            </div>
+        </div>
+        <div class="row search-row">
+            <div class="col-md-5 search-row-Div1">
+                <select id="Category-page-search">
+                    <option selected>Select Category</option>
+                    <option>Animals</option>
+                    <option>Mobile</option>
+                    <option>Electronic And Home Appliances</option>
+                    <option>Vehicles</option>
+                    <option>Bike</option>
+                    <option>Property For Sale</option>
+                    <option>Property For Rent</option>
+                    <option>Jobs</option>
+                    <option>Services</option>
+                    <option>Business Industrial & Agriculture</option>
+                    <option>Furniture & Home Decor</option>
+                    <option>Books, Sports & Hobbies</option>
+                    <option>Fashion & Beauty</option>
+                    <option>Kids</option>
+                </select>
+                <button class="btn btn-md btn-info" onclick="searchCategory()">Search</button>
+            </div>
+            <div class="col-md-7 search-row-Div2">
+                <input type="text" id="index-page-search" placeholder="Search AnyThing You Want...">
+                <button class="btn btn-md btn-primary" onclick="searchAnything()">Search</button>
+            </div>
+        </div>
+        <div class="row" id="fetchAnythingDiv">
+
+        </div>
+        <!-- <div class="row" id="searchFetchiDiv">
+
+        </div> -->
+    </div>
+
+    <script src="../scripts/app.js"></script>
+
+</body>
+
+</html>
